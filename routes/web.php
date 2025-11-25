@@ -8,3 +8,4 @@ Route::post('/imoveis', [ImovelController::class, 'store'])->name('imoveis.store
 Route::get('/imoveis/{id}/edit', [ImovelController::class, 'edit'])->name('imoveis.edit');
 Route::put('/imoveis/{id}', [ImovelController::class, 'update'])->name('imoveis.update');
 Route::delete('/imoveis/{id}', [ImovelController::class, 'destroy'])->name('imoveis.destroy');
+Route::get('/imoveis', [ImovelController::class, 'getAll'])->name('imoveis.list');

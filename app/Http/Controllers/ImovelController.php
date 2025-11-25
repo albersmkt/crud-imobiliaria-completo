@@ -60,4 +60,10 @@ class ImovelController extends Controller
 
         return response()->json(['success' => true]);
     }
+
+    // Retorna todos os imóveis em JSON (para AJAX)
+    public function getAll()
+    {
+        return response()->json(Imovel::all());
+    }
 }
